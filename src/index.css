@@ -130,7 +130,7 @@ video {
   z-index: 3;
   color: aliceblue;
   top: 55%;
-  left: 15%;  
+  left: 15vw;  
   
 }
 
@@ -139,8 +139,12 @@ video {
   position: absolute;
   height: 45vh;
   opacity: 0.5;
-  
-}
+  }
+
+  .reservation-small {
+    display: none;
+  }
+
 
 .reservation h1 {
   position: absolute;
@@ -179,3 +183,12 @@ padding: 2px;
 }
 
 
+@media (max-width:700px) {
+  .reservation img {  
+  display: none;    
+  }
+
+  .reservation-small {
+    display: block;
+}
+}

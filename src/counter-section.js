@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ticket1 from "./assets/1.jpg"
+import ticket2 from "./assets/11.jpg"
 
 
 const Counter = ()=> {
@@ -37,6 +38,7 @@ const Counter = ()=> {
 
 
 <img src={ticket1} alt="" />
+<img className="reservation-small"  src={ticket2} alt="" />
 
 <h1>{ticker}</h1>
 <h2>{row}</h2>
