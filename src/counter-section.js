@@ -3,12 +3,12 @@ import ticket1 from "./assets/1.jpg"
 import ticket2 from "./assets/11.jpg"
 
 
-const Counter = ()=> {
+const Counter = () => {
 
     const [ticker, setTicker] = useState(0);
     const [row, setRow] = useState(0);
 
-    // Function to update row based on ticker
+
     const updateRow = (newTicker) => {
         if (newTicker > 0) {
             setRow(Math.floor((newTicker - 1) / 10) + 1); // Calculate row based on ticker
@@ -32,21 +32,21 @@ const Counter = ()=> {
     };
 
 
-    return(
+    return (
 
         <div className="reservation">
 
+<img className="banner-one" src={ticket1} alt="" />
 
-<img src={ticket1} alt="" />
-<img className="reservation-small"  src={ticket2} alt="" />
 
-<h1>{ticker}</h1>
-<h2>{row}</h2>
-<h3>5</h3>
-<div>
-    <button onClick={booker} className="pluss"> 	&#10133;</button>
-    <button onClick={cancel} className="minuss">&#10134; </button>
-</div>
+            <h1>{ticker}</h1>
+            <h2>{row}</h2>
+            <h3>5</h3>
+            <div>
+                <button onClick={booker} className="pluss"> 	&#10133;</button>
+                <button onClick={cancel} className="minuss">&#10134; </button>
+                <button className="counterbut">Book Now</button>                
+            </div>
 
         </div>
     )
