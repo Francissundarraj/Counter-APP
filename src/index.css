@@ -99,11 +99,11 @@ video {
 
 .reservation {
 position: absolute;
-opacity: .5;
+opacity: .6;
 z-index: 1;
 top: 20em;
 left: 5vw;
-color: white;
+color: rgb(230, 7, 7);
  
 }
 .reservation img {
